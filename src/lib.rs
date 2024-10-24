@@ -24,9 +24,7 @@ macro_rules! min_assign_impl {
         impl MinAssign for $t {
             #[inline]
             fn min_assign(&mut self, other: $t) {
-                if *self > other {
-                    *self = other
-                }
+                *self = (*self).min(other)
             }
         }
     )+};
@@ -39,20 +37,18 @@ pub trait MaxAssign<RHS = Self> {
     fn max_assign(&mut self, rhs: RHS);
 }
 
-macro_rules! min_assign_impl {
+macro_rules! max_assign_impl {
     ($($t: ty)+) => {$(
         impl MaxAssign for $t {
             #[inline]
             fn max_assign(&mut self, other: $t) {
-                if *self < other {
-                    *self = other
-                }
+                *self = (*self).max(other)
             }
         }
     )+};
 }
 
-min_assign_impl!(usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f32 f64 );
+max_assign_impl!(usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f32 f64 );
 
 #[cfg(test)]
 mod tests {

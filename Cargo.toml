@@ -11,8 +11,8 @@ repository = "https://github.com/qdot3/min_max_assign"
 
 readme = "README.md"
 
-keywords = ["mathematics", ]
-categories = ["science"]
+keywords = ["math", ]
+categories = ["mathematics"]
 license = "MIT OR Apache-2.0"
 
 [badges]
