@@ -1,6 +1,20 @@
 [package]
 name = "min_max_assign"
-version = "0.1.0"
+version = "1.0.0"
+authors = ["qdot3"]
 edition = "2021"
 
-[dependencies]
+description = "Pure Rust curve fitting library"
+
+documentation = "https://docs.rs/fitting/"
+homepage = "https://crates.io/crates/fitting"
+repository = "https://github.com/tasshi-me/fitting-rs"
+
+readme = "README.md"
+
+keywords = ["number", ]
+categories = ["science"]
+license = "MIT OR Apache-2.0"
+
+[badges]
+maintenance = { status = "actively-developed" }
