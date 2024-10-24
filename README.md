@@ -10,4 +10,4 @@ cargo add min_max_assign
 
 ## License
 
-MIT or MIT/Apache 2.0
+MIT or Apache 2.0
