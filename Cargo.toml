@@ -4,11 +4,10 @@ version = "1.0.0"
 authors = ["qdot3"]
 edition = "2021"
 
-description = "Pure Rust curve fitting library"
-
-documentation = "https://docs.rs/fitting/"
-homepage = "https://crates.io/crates/fitting"
-repository = "https://github.com/tasshi-me/fitting-rs"
+description = "Change min(max) implementation in Rust"
+documentation = "https://docs.rs/min_max_assign/"
+homepage = "https://crates.io/crates/min_max_assign"
+repository = "https://github.com/qdot3/min_max_assign"
 
 readme = "README.md"
 

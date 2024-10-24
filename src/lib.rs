@@ -1,4 +1,4 @@
-//! This crate provides "change min(max)" implementation for Rust.
+//! This crate provides "change min(max)" implementation in Rust.
 //!
 //! ## Example
 //!
